@@ -1,0 +1,41 @@
+﻿@model MvcPractice1.Models.Item
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>New</title>
+</head>
+<body>
+    <form action="New" method="post">
+        <p>
+            <label asp-for="ItemId">Item ID</label>
+            <input asp-for="ItemId" />
+        </p>
+        <p>
+            <label asp-for="Description">Description</label>
+            <input asp-for="Description" />
+        </p>
+        <p>
+            <label asp-for="UnitsOnHand">Units On Hand</label>
+            <input asp-for="UnitsOnHand" />
+        </p>
+        <p>
+            <label asp-for="Cost">Cost</label>
+            <input asp-for="Cost" />
+        </p>
+        <p>
+            <label asp-for="SellingPrice">Selling Price</label>
+            <input asp-for="SellingPrice" />
+        </p>
+        <p>
+            <button type="submit">Create New Item</button>
+        </p>
+    </form>
+</body>
+</html>
