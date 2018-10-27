@@ -22,8 +22,7 @@ namespace MvcPractice1.Migrations
 
             modelBuilder.Entity("MvcPractice1.Models.Item", b =>
                 {
-                    b.Property<int>("ItemId")
-                        .ValueGeneratedOnAdd();
+                    b.Property<int>("ItemId");
 
                     b.Property<decimal>("Cost");
 

@@ -42,6 +42,7 @@ namespace MvcPractice1
                     template: "{controller=Item}/{action=Index}/");
             });
 
+            SeedData.EnsurePopulated(app);
         }
     }
 }

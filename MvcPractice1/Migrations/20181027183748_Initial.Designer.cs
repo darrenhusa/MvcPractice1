@@ -11,7 +11,7 @@ using System;
 namespace MvcPractice1.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20181027170032_Initial")]
+    [Migration("20181027183748_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,8 +23,7 @@ namespace MvcPractice1.Migrations
 
             modelBuilder.Entity("MvcPractice1.Models.Item", b =>
                 {
-                    b.Property<int>("ItemId")
-                        .ValueGeneratedOnAdd();
+                    b.Property<int>("ItemId");
 
                     b.Property<decimal>("Cost");
 
