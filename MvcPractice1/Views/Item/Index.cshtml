@@ -13,24 +13,23 @@
 </head>
 <body>
     <h1>This is the Index action of the ItemController</h1>
-    @*<ul>
-        @foreach (Item item in Model)
-        {
-            <li>@item.ItemId</li>
-            <li>@item.Description</li>
-        }
-    </ul>*@
     <table>
         <tr>
             <th>Item Id</th>
             <th>Description</th>
+            <th>Units on Hand</th>
+            <th>Cost</th>
+            <th>Selling Price</th>
         </tr>
         @foreach (var item in Model)
         {
-            <tr>
-                <td>@item.ItemId</td>
-                <td>@item.Description</td>
-            </tr>
+        <tr>
+            <td>@item.ItemId</td>
+            <td>@item.Description</td>
+            <td>@item.UnitsOnHand</td>
+            <td>@item.Cost</td>
+            <td>@item.SellingPrice</td>
+        </tr>
         }
         </table>
 </body>
