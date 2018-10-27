@@ -14,5 +14,7 @@ namespace MvcPractice1.Models
         public int UnitsOnHand { get; set; }
         public decimal Cost { get; set; }
         public decimal SellingPrice { get; set; }
+
+        public Supplier Supplier { get; set; }
     }
 }

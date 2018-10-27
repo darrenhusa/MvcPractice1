@@ -14,5 +14,7 @@ namespace MvcPractice1.Models
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
         public DbSet<Item> Items { get; set; }
+        public DbSet<Supplier> Suppliers { get; set; }
+
     }
 }
