@@ -7,14 +7,24 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using MvcPractice1.Models;
+using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
 
 namespace MvcPractice1
 {
     public class Startup
     {
+        public Startup(IConfiguration configuration) => Configuration = configuration;
+
+        public IConfiguration Configuration { get;  }
+
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<IItemRepository, FakeItemRepository>();
+            string conString = Configuration["ConnectionStrings:DefaultConnection"];
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(conString));
+            services.AddTransient<IItemRepository, EfItemRepository>();
+            //services.AddTransient<IItemRepository, FakeItemRepository>();
             services.AddMvc();
         }
 
