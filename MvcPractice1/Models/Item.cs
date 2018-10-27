@@ -15,6 +15,9 @@ namespace MvcPractice1.Models
         public decimal Cost { get; set; }
         public decimal SellingPrice { get; set; }
 
+        [ForeignKey("SupplierCode")]
+        public string SupplierCode { get; set; }
+
         public Supplier Supplier { get; set; }
     }
 }

@@ -45,62 +45,71 @@ namespace MvcPractice1.Models
                       UnitsOnHand = 20,
                       Cost = 0.15M,
                       SellingPrice = 0.25M,
+                      SupplierCode = "ER"
                     },
                     new Item
                     { ItemId = 1683,
                       Description = "CD Wallet",
                       UnitsOnHand = 12,
                       Cost = 3.45M,
-                      SellingPrice = 4.00M
+                      SellingPrice = 4.00M,
+                      SupplierCode = "HI"
                     },
                     new Item
                     { ItemId = 2563,
                       Description = "Desktop Holder",
                       UnitsOnHand = 4,
                       Cost = 3.85M,
-                      SellingPrice = 4.75M
+                      SellingPrice = 4.75M,
+                      SupplierCode = "ER"
                     },
                     new Item
                     { ItemId = 2593,
                       Description = "Disks",
                       UnitsOnHand = 175,
                       Cost = 0.25M,
-                      SellingPrice = 0.75M
+                      SellingPrice = 0.75M,
+                      SupplierCode = "HI"
                     },
                     new Item
                     { ItemId = 3923,
                       Description = "Disk Cases",
                       UnitsOnHand = 12,
                       Cost = 2.20M,
-                      SellingPrice = 2.75M
+                      SellingPrice = 2.75M,
+                      SupplierCode = "HI"
                     },
                     new Item
                     { ItemId = 3953,
                       Description = "Mouse Holder",
                       UnitsOnHand = 10,
                       Cost = 0.80M,
-                      SellingPrice = 1.00M
+                      SellingPrice = 1.00M,
+                      SupplierCode = "MT"
                     },
                     new Item
                     { ItemId = 4343,
                       Description = "Mouse Pad",
                       UnitsOnHand = 25,
                       Cost = 2.25M,
-                      SellingPrice = 3.00M
+                      SellingPrice = 3.00M,
+                      SupplierCode = "MT"
                     },
                     new Item
                     { ItemId = 5810,
                       Description = "PC Tool Kit",
                       UnitsOnHand = 9,
                       Cost = 7.80M,
-                      SellingPrice = 9.00M
+                      SellingPrice = 9.00M,
+                      SupplierCode = "ER"
                     },
                     new Item
                     { ItemId = 5930,
                       Description = "Wrist Rest",
                       UnitsOnHand = 3,
                       Cost = 2.90M,
-                      SellingPrice = 3.25M
+                      SellingPrice = 3.25M,
+                      SupplierCode = "ER"
                     }
                 );
                 context.SaveChanges();
